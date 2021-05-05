@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
-namespace Tomogram_Visualization
+namespace Dydykin_Tomogram_Visualizer1
 {
     static class Program
     {
