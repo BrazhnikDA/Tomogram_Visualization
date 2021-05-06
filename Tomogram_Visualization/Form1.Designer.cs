@@ -117,7 +117,7 @@ namespace Dydykin_Tomogram_Visualizer1
             this.открытьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1528, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1528, 33);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,7 +176,7 @@ namespace Dydykin_Tomogram_Visualizer1
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(222, 43);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Ширини TF:";
+            this.label3.Text = "Ширина TF:";
             // 
             // radioButton3
             // 

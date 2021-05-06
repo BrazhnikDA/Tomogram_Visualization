@@ -45,7 +45,6 @@ namespace Dydykin_Tomogram_Visualizer1
                     {
                         if (IsReDraw)
                         {
-
                             view.generateTextureImage(currentLayer);
                             view.Load2DTexture();
                             IsReDraw = false;
@@ -76,6 +75,17 @@ namespace Dydykin_Tomogram_Visualizer1
             currentLayer = trackBar1.Value;
             IsReDraw = true;
         }
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            view.minimum = trackBar2.Value;
+            IsReDraw = true;
+        }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+            view.window = trackBar3.Value;
+            IsReDraw = true;
+        }
 
         void Application_Idle(object sender, EventArgs e)
         {
@@ -98,19 +108,7 @@ namespace Dydykin_Tomogram_Visualizer1
             }
             FrameCount++;
         }
-
-        private void trackBar2_Scroll(object sender, EventArgs e)
-        {
-            view.minimum = trackBar2.Value;
-            IsReDraw = true;
-        }
-
-        private void trackBar3_Scroll(object sender, EventArgs e)
-        {
-            view.window = trackBar3.Value;
-            IsReDraw = true;
-        }
-
+        
         private void glControl1_SizeChanged(object sender, EventArgs e)
         {
             glControl1.Width = this.Width;
