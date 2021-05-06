@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace Dydykin_Tomogram_Visualizer1
+namespace Tomogram_Visualization
 {
     class View
     {
@@ -23,12 +23,13 @@ namespace Dydykin_Tomogram_Visualizer1
                 return max;
             return value;
         }
+
         public int minimum = 0;
-        public int window = 2000;
+        public int TF = 2000;
         Color TransferFunction(short value)
         {
             int min = minimum;
-            int max = minimum + window;
+            int max = minimum + TF;
             int newVal = clamp((value - min) * 255 / (max - min), 0, 255);
             return Color.FromArgb(255, newVal, newVal, newVal);
         }

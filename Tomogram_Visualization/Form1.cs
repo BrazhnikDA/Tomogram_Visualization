@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Dydykin_Tomogram_Visualizer1
+namespace Tomogram_Visualization
 {
     public partial class Form1 : Form
     {
@@ -13,7 +13,7 @@ namespace Dydykin_Tomogram_Visualizer1
         GLgraphics glgraphics = new GLgraphics();
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -45,6 +45,7 @@ namespace Dydykin_Tomogram_Visualizer1
                     {
                         if (IsReDraw)
                         {
+
                             view.generateTextureImage(currentLayer);
                             view.Load2DTexture();
                             IsReDraw = false;
@@ -83,7 +84,7 @@ namespace Dydykin_Tomogram_Visualizer1
 
         private void trackBar3_Scroll(object sender, EventArgs e)
         {
-            view.window = trackBar3.Value;
+            view.TF = trackBar3.Value;
             IsReDraw = true;
         }
 
@@ -108,7 +109,7 @@ namespace Dydykin_Tomogram_Visualizer1
             }
             FrameCount++;
         }
-        
+
         private void glControl1_SizeChanged(object sender, EventArgs e)
         {
             glControl1.Width = this.Width;

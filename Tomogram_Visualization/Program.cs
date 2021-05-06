@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Dydykin_Tomogram_Visualizer1
+namespace Tomogram_Visualization
 {
     static class Program
     {

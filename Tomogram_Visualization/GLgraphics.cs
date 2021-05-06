@@ -3,7 +3,7 @@ using OpenTK;
 using OpenTK.Graphics.OpenGL;
 
 
-namespace Dydykin_Tomogram_Visualizer1
+namespace Tomogram_Visualization
 {
     class GLgraphics
     {

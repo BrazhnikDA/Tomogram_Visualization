@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Dydykin_Tomogram_Visualizer1
+namespace Tomogram_Visualization
 {
     class Bin
     {

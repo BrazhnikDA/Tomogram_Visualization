@@ -1,5 +1,5 @@
 ﻿
-namespace Dydykin_Tomogram_Visualizer1
+namespace Tomogram_Visualization
 {
     partial class Form1
     {
@@ -138,7 +138,6 @@ namespace Dydykin_Tomogram_Visualizer1
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(160, 48);
             this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Quads";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
@@ -152,7 +151,6 @@ namespace Dydykin_Tomogram_Visualizer1
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(206, 48);
             this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Texture";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -176,7 +174,7 @@ namespace Dydykin_Tomogram_Visualizer1
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(222, 43);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Ширина TF:";
+            this.label3.Text = "Ширини TF:";
             // 
             // radioButton3
             // 
@@ -188,7 +186,6 @@ namespace Dydykin_Tomogram_Visualizer1
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(275, 48);
             this.radioButton3.TabIndex = 10;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "QuadsStrip";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
